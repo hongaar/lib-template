@@ -1,0 +1,27 @@
+# https://github.com/probot/settings
+repository:
+  name: lib-template
+  description: A TypeScript library to do XYZ
+  homepage: https://github.com/hongaar/lib-template
+  topics: lib, typescript
+  private: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  has_downloads: true
+  default_branch: develop
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: false
+
+branches:
+  - name: master
+    protection:
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: false
+      required_status_checks:
+        strict: false
+        contexts: []
+      enforce_admins: null

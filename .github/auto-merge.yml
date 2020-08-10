@@ -1,0 +1,16 @@
+# https://github.com/bobvanderlinden/probot-auto-merge
+minApprovals:
+  COLLABORATOR: 1
+maxRequestedChanges:
+  COLLABORATOR: 0
+updateBranch: false
+deleteBranchAfterMerge: false
+mergeMethod: squash
+mergeCommitMessage: |
+  {title} (#{number})
+
+  {body}
+blockingLabels:
+  - blocked
+requiredLabels:
+blockingTitleRegex: '\bwip\b'
