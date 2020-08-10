@@ -12,7 +12,6 @@
     "lib"
   ],
   "scripts": {
-    "init": "init.sh",
     "prepublishOnly": "yarn build",
     "build": "tsc",
     "watch": "tsc --watch",
