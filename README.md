@@ -23,4 +23,4 @@ your new repository and run this in a terminal:
 $ ./init.sh
 ```
 
-This will ask you for a new name
+Done! 🎉
