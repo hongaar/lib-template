@@ -1,0 +1,7 @@
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn doc:toc && yarn doc:todos && git add README.md TODO.md"
+    }
+  }
+}
