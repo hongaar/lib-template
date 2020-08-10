@@ -23,4 +23,22 @@ your new repository and run this in a terminal:
 $ ./init.sh
 ```
 
+## GitHub configuration
+
+- GitHub configuration is updated automatically if you install the
+  [Settings app](https://github.com/apps/settings)
+- PR's are merged automatically if you install
+  [probot-auto-merge](https://github.com/apps/probot-auto-merge)
+- Monitor the code quality with [CodeClimate](https://codeclimate.com/oss/).
+  Replace `<code_climate_reporter_id>` in `.github/workflows/ci.yaml` with the
+  _Test Reporter ID_ obtained from CodeClimate (navigate to _Repo Settings_ >
+  _Test coverage_).
+- Auto-release by using
+  [semantic-release](https://github.com/semantic-release/semantic-release).
+  Create these repository _secrets_:
+  - `NPM_TOKEN`: Enter a NPM access token with _Read and Publish_ permission to
+    publish your package to NPM.
+  - `GH_TOKEN`: Enter a GitHub Personal Acces Token with _repo_ permission. This
+    is needed to circumvent branch protection rules when adding release commits.
+
 Done! 🎉
